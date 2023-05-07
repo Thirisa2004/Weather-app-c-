@@ -1,0 +1,63 @@
+/* Create Weather app
+   Name:Thirisa R
+    College: Vivekanandha College of Engineering For Women
+*/
+
+#include<iostream>
+using namespace std;
+
+int main() 
+{
+    string email,location;
+    int choice;
+
+    cout << "Welcome to the Weather App!" << endl;
+    cout << "Please enter your email address: ";
+    cin >> email;
+    cout << "Please enter your location: ";
+    cin >> location;
+
+    cout << "\nMenu:\n";
+    cout << "1. Current weather\n";
+    cout << "2. Yesterday weather\n";
+    cout << "3. Todays Weather\n";
+    cout << "4. Week weather forcast\n";
+    cout << "4. Exit\n\n";
+
+    while (true) {
+        cout << "\n Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                cout <<" Get current weather for " << location << "...\n";
+                cout<<"\t\n rainy";
+                break;
+
+            case 2:
+                cout << " Get yesterdays weather for " << location << "...\n";
+                cout<<"\t\n cloudy";
+                break;
+
+            case 3:
+                cout << " Get Todays weather for " << location << "...\n";
+                cout<<"\n\t thunderstorm";
+                break;
+                
+            case 4:
+                cout << " Get week weathercast for " << location << "...\n";
+                cout<<"\n\t dry";
+                break;
+    
+
+            case 5:
+                cout << "Thank you for using the Weather App! Goodbye.\n";
+                return 0;
+
+            default:
+                cout << "Invalid choice. Please enter a number between 1 and 4.\n";
+                break;
+        }
+    }
+}
+
